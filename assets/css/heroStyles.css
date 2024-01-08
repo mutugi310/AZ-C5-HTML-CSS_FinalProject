@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+.hero-container{
+    background-image: url(../imgs/hero-img.png);
+    height: 482px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-text p {
+    color:#FFF;
+    font-family: Merriweather;
+    font-size: 12px;
+    font-weight: 400;
+}
+h1{
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 26px;
+    font-weight: 700;
+}
+.hero-btns :first-child {
+    background-color: #C82424;
+    color: #FFF;
+    width: 124px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.hero-btns :last-child {
+    background: rgba(200, 36, 36, 0.00);
+    color: #FFF;
+    border-color: #FFF;
+    width: 108px;
+    height: 38px;
+    border-radius: 5px;
+    
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start; 
+    gap: 30px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    margin: 0px 10px 0px 20px;
+    gap: 20px;
+
+}
+.hero-toptext{
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: solid #C82424;
+}
+.hero-btns{
+    margin: 0px 10px 30px 20px;
+
+}
+@media(min-width: 600px) {  
+    .hero-text p {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 32px;
+    }     
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0px 40% 30px 20px;
+        gap: 30px;
+    }
+   
+}
+
+@media(min-width: 1008px){
+    .hero-text{
+        margin: 0px 65% 30px 20px;
+    }  
+}

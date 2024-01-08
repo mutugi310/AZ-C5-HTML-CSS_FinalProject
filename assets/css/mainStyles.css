@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* style the cards section */
+/* style the icons in the cards section */
+.bd-custom-icon{
+    height: 50px;
+    width: 50px;
+}
+/* style the container cointaining the cards section */
+.card-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+/* cards' styles */
+.card-item{
+    font-family: 'Merriweather';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 10px;
+    border-bottom: 0.5px solid #CDC9C9;
+    background: #F9F9F9;
+}
+/* cards' title style */
+.card-title{
+    font-size: 18px;
+}
+/* cards' text styles */
+.card-text{
+    font-size: 14px;
+}
+
+/* style the about us section */
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+.aboutus-img img{
+    height: 353;
+    width: 100%;
+}
+.aboutus-textblock{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px auto;
+}
+/* style red-text-underline in about us and contact us sections */
+.red-text-underline{
+    text-decoration: underline solid #C82424;
+    text-underline-offset: 10px;    
+}
+.aboutus-textblock h2 span{
+    color:  #C82424;  
+}
+.aboutus-textblock h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+.list-items li{
+    list-style: none;
+}
+.list-items ul li span{
+    color: #6C6C6C;
+    margin-left: 10px;
+}
+/* style checked-square in about us section */
+.check-square{
+    color: #6C6C6C;
+    height: 20px;
+    width: 20px;
+}
+.btn {
+    width: 124px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #C82424;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* style the video section */
+.video-section-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+    gap: 30px;
+}
+.red-bg-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #C82424;
+    color: #F4D3D5;
+    padding: 40px 20px;
+    
+}
+.red-bg-text img{
+    width: 96px;
+    height: 39px;
+}
+.red-bg-text h2{
+    size: 20px;
+    color: #FFFFFF;
+}
+.video-img{
+    background-image: url(../imgs/video-img.jfif);
+    background-size: cover;
+    height: 325px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video-icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.video-icon img{
+    height: 80px;
+    width: 80px;
+}
+/* style the contact us section */
+.contactus-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%), url(../imgs/contact-bg-img.jfif), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    
+}
+.contactus-text{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    color: #FFFFFF;
+}
+.contactus-means{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* style the first p tags  acting a headers */
+.contactus-phone p:nth-of-type(1), .contactus-socials p {
+    margin-bottom: 20px;
+}
+/* style form */
+.contactus-form{
+    height: 100vh;
+    width: 80%;
+    margin: 20px auto
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-icon{
+    width: 24px;
+    height: 24px;
+    padding: auto;
+}
+.formicon-container{
+    background-color: #3F596C;;
+    border-right: 0.7px solid #8B8B8B;
+    width: 50px;
+    height: 55px;
+}
+
+.input-container{
+    background-color: #D9D9D9;
+    border: 1px white solid;
+    height: 55px;
+    width: 378px;
+}
+
+/* style our partners section section */
+.ourpartners-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    align-items: center;
+    margin: 40px auto;
+}
+.ourpartners-title{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.ourpartners-title h2{
+    font-size: 28px;
+}
+.partners{
+    display: grid;
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners img{
+    height: 30px;
+    width: 150px;
+}
+
+/* media queries for the tablet*/
+@media(min-width: 600px){
+    .card-container{
+        display: grid;
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* style the about us section */
+    .about-us-container{
+        width: 85%;
+    }
+    /* style the video section */
+    .video-section-container{
+        width: 75%;
+        justify-content: end;
+    }
+    .red-bg-text{
+        padding: 40px;
+    }
+    .red-bg-text h2{
+        size: 30px;
+    }
+    /* style the contact us section */
+
+    /* style our partners section section */
+    .ourpartners-container{
+        width: 90%;
+        gap: 20px;
+    }
+    .ourpartners-title{
+        width: 60%;
+    }
+    
+    .ourpartners-title h2{
+        font-size: 28px;
+        text-align: center;
+    
+    }
+    .partners{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .partners img{
+        width: 150px;
+        height: 30px;
+    }
+}
+       
+
+/* media queries for the labtop*/
+@media(min-width: 1008px){
+    /* style the cards section */
+    .card-container{
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    /* style the about us section */
+    .about-us-container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 90%;
+        margin: 40px auto;
+    }
+    .aboutus-img img{
+        height: 558px;
+        width: 95%;
+    }
+    .aboutus-textblock{
+        display: flex;
+        flex-direction: column;
+        
+        width: 50%;
+        gap: 20px;
+        margin: 30px auto;
+    }
+    .list-items{
+        display: flex;
+    }
+    /* style the video section */
+    .video-section-container{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: end;
+    }
+    .red-bg-text{
+        width: 50%;
+        height: 480px;
+        padding: 0px 40px;
+        justify-content: center;
+        position: absolute;
+        margin-right: 42%;
+    }
+    .video-img{
+        width: 50%;
+        height: 517px;
+    }
+    .red-bg-text h2{
+        size: 30px;
+    }
+    /* style the contact us section */
+
+    /* style our partners section section */
+    .ourpartners-container{
+        width: 90%;
+        gap: 20px;
+    }
+    .ourpartners-title{
+        width: 60%;
+    }
+    
+    .ourpartners-title h2{
+        font-size: 28px;
+        text-align: center;
+    
+    }
+    .partners{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .partners img{
+        width: 202px;
+        height: 38px;
+    }
+}  

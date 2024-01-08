@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* .flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    align-items: start;
+} */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: #0F3041;
+    color: #fff;    
+}
+/* style the footer container*/
+.flexcontainer-colum{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #f9f9f9;
+}
+/* style list items in the footer*/
+.footer-container ul li{
+    list-style: none;
+    line-height: normal;
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+/* style a tags in the footer*/
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+/* style top footer part*/
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    align-items: start;
+    margin: 40px auto 40px 20px;
+}
+/* style h4(s) in the footer*/
+.footer-top h4{
+    font-size: 20px;
+}
+/* style social icons at the footer*/
+.bottom-social-icons{
+    height: 30px;
+    width: 30px;
+}
+/* style the copyright div*/
+.copyright{
+    background-color: #0F3041;
+    color: #fff;    
+    width: 100%;
+    border-top: 0.6px solid #f9f9f9;
+    text-align: center;
+    padding-top: 20px;
+}
+.copyright p{ 
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* media queries for the tablet*/
+@media(min-width: 600px){
+    /* style top part of footer to display grid of two colums and two rows*/
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px; 
+      }
+}
+/* media queries for the labtop*/
+@media(min-width: 1008px){
+   /* style the footer top to  display in a line*/
+    .footer-top{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+   }
+   /* set the flex basis of first item*/
+   .footer-text{
+    flex-basis: 40%;
+    margin-right: 20px;
+   }
+   /* set the flex basis of subsequent flex items*/
+   .footer-flexitem{
+    flex-basis: 20%;
+   }    
+} 

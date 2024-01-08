@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Law firm website replaceted from a Figma design using HTML and CSS">
+    <meta name="author" content="Kelvin Mutugi">
+    <link rel="icon" href="./assets/imgs/favicon.io" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/feather.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Kelvin-CSS/HTMLFinalProject-Law Firm Website</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="header-container">
+            <!-- top part of the header section -->
+            <div class="topbar-container">
+                  <!-- contacts at the top-->
+                <div class="topbar-contact">
+                    <div class="top-email">
+                        <i data-feather="mail" class="custom-icon"></i>
+                        <span class="top-text">cohort5@azubiafrica.org</span>
+                    </div>
+                    <div class="top-phone">
+                        <i data-feather="phone" class="custom-icon"></i>
+                        <span class="top-text">+254 1234 56 79</span>
+                    </div>
+                </div>
+                <!-- social icons and button at the top part of the header section/ -->
+                <div class="topbar-social">
+                    <div class="top-socials">
+                        <img src="./assets/imgs/Group 20-facebookicon.svg" alt="facebook icon">
+                        <img src="./assets/imgs/Group 21-twittericon.svg" alt="twitter icon">
+                        <img src="./assets/imgs/Group 22-instagramicon.svg" alt="instagram icon">
+                    </div>
+                    <div class="topButton">
+                        <button class="top-btn">Get a schedule</button>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom part of the header section/main menu bar -->
+            <div class="mainbar-container">
+                <div class="logo">
+                    <img src="./assets/imgs/logo.png" alt="a logo made of 'scales of juctice icon' to the left and 'atorn law firm' text to the right">
+                </div>
+                <!-- nav bar -->
+                <div class="nav">
+                    <!-- hamburger icon for mobile screens  -->
+                    <div class="hamburger-btn">
+                        <img src="./assets/imgs/menuhamburger-menuIcon.svg" alt="hamburger menu icon" class="open-overlay-button">
+                    </div>
+                    <!-- nav items on tablet and labtop -->
+                    <div class="main-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="clossing-icon">
+                    <i data-feather="x" class="X-icon"></i>
+                </div>
+                <div class="overlay-items">
+                    <nav class="overlay-nav" >
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+    <main>
+        <!-- hero section -->
+        <section class="">
+            <div class="hero-container">
+                <!-- text in the hero section -->
+                <div class="hero-text">
+                    <div class="hero-toptext">
+                        <p>Right way...</p>
+                    </div>
+                    <div class="hero-midtext">
+                        <h1>It's Our Pride <br>
+                            To Fight For Your Dream</h1>
+                    </div>
+                    <div class="hero-btmtext">
+                        <p>But I must explain to you how all this mistaken idea of
+                            denouncing pleasure and praising pain was born and I will give 
+                            you a complete account of the system, and expound the actual 
+                            teachings of the great explorer of the truth.</p>
+                    </div>
+                </div>
+                <!-- buttons in the hero section -->
+                <div class="hero-btns">
+                    <button>Free Consulting</button>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+        <!-- cards section after the hero section with 4 cards -->
+        <section>
+            <div class="card-container">
+                <div class="court card-item">
+                    <p class="card-title">Court Performance</p>
+                    <i data-feather="home" class="bd-custom-icon"></i>
+                    <p class="card-text"> At vero eos et accusamus et 
+                        iusto odio dignissimos ducimus 
+                        qui blanditiis praesentium 
+                        voluptatum deleniti atque.</p>
+                </div>
+                <div class="document card-item">
+                    <p class="card-title">Document Review</p>
+                    <i data-feather="file-text" class="bd-custom-icon"></i>
+                    <p class="card-text">At vero eos et accusamus et
+                        iusto odio dignissimos ducimus
+                        qui blanditiis praesentium 
+                        voluptatum deleniti atque.</p>
+                </div>
+                <div class="expert card-item">
+                    <p class="card-title">Expert Attorney</p>
+                    <i data-feather="anchor" class="bd-custom-icon"></i>
+                    <p class="card-text">At vero eos et accusamus et
+                        iusto odio dignissimos ducimus
+                        qui blanditiis praesentium 
+                        voluptatum deleniti atque.</p>
+                </div>
+                <div class="case card-item">
+                    <p class="card-title">Case Dismissed</p>
+                    <i data-feather="bell" class="bd-custom-icon"></i>
+                    <p class="card-text">At vero eos et accusamus et 
+                        iusto odio dignissimos ducimus 
+                        qui blanditiis praesentium 
+                        voluptatum deleniti atque.</p>
+                </div>
+            </div>
+        </section>
+        <!-- about us section -->
+        <section>
+            <div class="about-us-container">
+                <div class="aboutus-img">
+                    <img src="./assets/imgs/about-img.png" alt="group of well dressed men smilling while gazing at an open document held by two of them">
+                </div>
+                <div class="aboutus-textblock">
+                    <p class="ab-title red-text-underline">About Us</p>
+                    <h2>We Are Top Lawyers With  <span>25 Years</span>  Of Experience</h2>
+                    <p>On the other hand, we denounce with righteous indignation and dislike 
+                        men who are so beguiled and demoralized by the charms of pleasure of the 
+                        moment, so blinded by desire, that  they cannot foresee the pain and trouble
+                        that are bound to ensue.</p>
+                    <div class="list-items">
+                        <ul>
+                            <li><i data-feather="check-square" class="check-square"></i><span>100% Success Rate</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>No Need Extra Cost for Consultation</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>Expert Legal Service</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>Highly Recommendation</span></li>
+                        </ul>
+                        <ul>
+                            <li><i data-feather="check-square" class="check-square"></i><span>Fast Support</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>High Court Performance</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>Free Counseling</span></li>
+                            <li><i data-feather="check-square" class="check-square"></i><span>Quick Complete Case</span></li>
+                        </ul> 
+                    </div>
+                    <div class="aboutus-Button">
+                        <button class="btn">Free Consulting</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- video section -->
+        <section>
+            <div class="video-section-container">
+                <div class="red-bg-text">
+                    <h2>We Fight For Right, Meet Us To Solve Your Legal Problem In Right Way</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum  deleniti atque corrupti quos dolores et quas 
+                        molestias excepturi sint occaecati cupiditate non  provident, similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum  fuga.</p>
+                    <img src="./assets/imgs/signature.png" alt="signiture">
+                    <p>Anthomas Darlos</p>
+                    <p>Senior Attorney & Founder of Atorn</p>
+                </div>
+                <div class="video-img">
+                    <div class="video-icon">
+                        <img src="./assets/imgs/video icon.png" alt="video icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact us section -->
+        <section>
+            <div class="contactus-container">
+                <div class="contactus-text">
+                    <h2>Contact Us Today, Get In Touch With
+                        Expert
+                    </h2>
+                    <p>On the other hand, we denounce with righteous indignation
+                        and dislike men who are so beguiled and demoralized by the
+                        charms of pleasure of the moment, so blinded by desire hat
+                        they cannot foresee the pain and trouble.
+                    </p>
+                    <div class="contactus-means">
+                        <div class="contactus-phone">
+                            <p><span class="red-text-underline">Phone</span> Number</p>
+                            <p>+233 1234 56 79</p>
+                        </div>
+                        <div class="contactus-socials">
+                            <p><span class="red-text-underline">Our Soc</span>ial Links</p>
+                            <span class="bottom-social-icons"><img src="./assets/imgs/Group 20-facebookicon.svg" alt="facebook icon"></span>
+                            <span class="bottom-social-icons"></span><img src="./assets/imgs/Group 21-twittericon.svg" alt="twitter icon"></span>
+                            <span class="bottom-social-icons"></span><img src="./assets/imgs/Group 22-instagramicon.svg" alt="instagram icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="contactus-form">
+                    <form action="#" method="post">
+                        <p>Get A Flexible Schedule</p>
+                        
+                        <div class="fullName input-container">
+                            <span class="formicon-container"> <i data-feather="user" class="form-icon"></i></span>
+                            <input type="text" name="full-name" id="full-name" placeholder="Full Name">
+                        </div>
+                        <div class="userEmail">
+                            <span class="formicon-container"><i data-feather="mail" class="form-icon"></i></span>
+                            <input type="email" name="user-email" id="user-email" placeholder="Full Name"><br>
+                        </div>
+                        <div class="userPhone">
+                            <span class="formicon-container"><i data-feather="phone" class="form-icon"></i></span>
+                            <input type="number" name="phone-no" id="phone-no" placeholder="Phone NO"><br>
+                        </div>
+                        <div class="dateCont">
+                            <span class="formicon-container"><i data-feather="calendar" class="form-icon"></i></span>
+                            <input type="date" name="date" id="date" ><br>
+                        </div>
+                        <div class="userMessage">
+                            <span class="formicon-container"><i data-feather="message-square" class="form-icon"></i></span>
+                            <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        </div>                    
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- our partners section -->
+        <section>
+            <div class="ourpartners-container">
+                <div class="ourpartners-title">
+                    <p><span class="red-text-underline">Our Partn</span>ers</p>
+                    <h2>Trusted By Many Front 
+                        Line Teams Everywhere</h2>
+                </div>
+                <div class="partners">
+                    <img src="./assets/imgs/partner1-icon.png" alt="Partner 1- ROTOLO company logo icon">
+                    <img src="./assets/imgs/partner2-icon.png" alt="Partner 2- QUINYX company logo icon">
+                    <img src="./assets/imgs/partner3-icon.png" alt="Partner 3- SOCITRI company logo icon">
+                    <img src="./assets/imgs/partner4-icon.png" alt="Partner 4- AQUVEO company logo icon">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <div class="footer-container">
+            <!-- footer summary and social icons -->
+            <div class="footer-top">
+                <div class="footer-text flexcontainer-colum">
+                    <img src="./assets/imgs/logo-white.png" alt="a logo made of 'scales of juctice icon' to the left and 'atorn law firm' text to the right" class="logo">
+
+                    <p>At vero eos et accusamus et iusto odio dignissimos 
+                        ducimus qui blanditiis praesentium voluptatum 
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,  similique sunt in culpa qui officia deserunt mollitia  animi, id est laborum et dolorum fuga. Et harum  quidem rerum.</p>
+                    
+                        <div class="footer-socialicons">
+                        <span class="bottom-social-icons"><img src="./assets/imgs/Group 20-facebookicon.svg" alt="facebook icon"></span>
+                        <span class="bottom-social-icons"></span><img src="./assets/imgs/Group 21-twittericon.svg" alt="twitter icon"></span>
+                        <span class="bottom-social-icons"></span><img src="./assets/imgs/Group 22-instagramicon.svg" alt="instagram icon"></span>
+                    </div>
+                </div>
+                <!-- footer nav links/quick links -->
+                <div class="quick-links flexcontainer-colum footer-flexitem">
+                    <h4><span class="red-text-underline">Quick </span>Links</h4>
+                    <div class="footer-nav">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- footer services -->
+                <div class="services flexcontainer-colum footer-flexitem">
+                    <h4><span class="red-text-underline">Servi</span>ces</h4>
+                    <div class="services-lst">
+                        <ul>
+                            <li>Civil Law</li>
+                            <li>Family Law</li>
+                            <li>Cyber Law</li>
+                            <li>Case Study</li>
+                            <li>Education Law</li>
+                            <li>Business Law</li>
+                            <li>Investment Law</li>
+                        </ul>
+                    </div>                         
+                </div>
+                 <!-- footer contact info -->
+                <div class="contact-info flexcontainer-colum footer-flexitem">
+                    <h4><span class="red-text-underline">Conta</span>ct Info</h4>
+                    <div class="contacts-lst">
+                        <ul>
+                            <li><span><i data-feather="phone"></i></span>+233 1234 56 79</li>
+                            <li><span><i data-feather="mail"></i></span>cohort5@azubiafrica.org</li>
+                            <li><span><i data-feather="map-pin"></i></span>North Legon - Accra, Ghana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- copyright text -->
+        <div class="copyright">
+            <p>2023 &copy;Cohort 5. All rights reserved </p>
+        </div>
+        
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
