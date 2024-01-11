@@ -35,8 +35,16 @@ h1{
     border-color: #FFF;
     width: 108px;
     height: 38px;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
+}
+.hero-btns :first-child:hover{
+    border-color: blue;  
+    color: rgb(202, 226, 226);
+}
+.hero-btns :last-child:hover{
+    transform: scale(1.2);
+    color: #e49898;
+    border-color: rgb(231, 181, 17);    
 }
 
 .hero-container{

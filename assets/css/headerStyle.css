@@ -25,6 +25,7 @@
 .hamburger-btn img{
     height: 30px;
     width: 30px;
+    cursor: pointer;
 }
 
 .header-container{
@@ -76,8 +77,6 @@ nav ul{
     justify-content: space-between;
     margin: 10px auto;
 }
-
-
 .overlay-container{
     display: none;
     justify-content: center;
@@ -103,6 +102,9 @@ nav ul{
     padding: 20px;
     gap: 10px;
 }
+.overlay-container-is-active{
+    display: flex;
+}
 .clossing-icon{
     width: 100%;
     text-align: end;
@@ -119,7 +121,6 @@ nav ul{
     width: 100%;
     align-self: center;
     margin: 10px auto;
-
 }
 .overlay-nav ul li a{
     color: #000;
@@ -128,6 +129,10 @@ nav ul{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.overlay-nav ul li a:hover{
+    color: blue;
+    background-color: antiquewhite;
 }
 .overlay-nav ul li{
     border-bottom:  0.5px solid #6C6C6C;
@@ -138,7 +143,6 @@ nav ul{
     .topbar-container{
         display: flex;
         flex-direction: row;
-        
     }
 
     .topbar-contact{
