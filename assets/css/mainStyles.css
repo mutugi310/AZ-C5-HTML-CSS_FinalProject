@@ -80,12 +80,12 @@
     width: 20px;
 }
 .btn {
-    width: 124px;
     height: 38px;
     border-radius: 5px;
     background-color: #C82424;
     color: #FFFFFF;
     border: none;
+    padding: 10px;
 }
 
 /* style the video section */
@@ -137,13 +137,12 @@
 .contactus-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%), url(../imgs/contact-bg-img.jfif), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .contactus-text{
     display: flex;
@@ -151,6 +150,7 @@
     width: 90%;
     gap: 20px;
     color: #FFFFFF;
+    padding: 20px 10px;
 }
 .contactus-means{
     display: flex;
@@ -161,35 +161,81 @@
 .contactus-phone p:nth-of-type(1), .contactus-socials p {
     margin-bottom: 20px;
 }
+.contactus-text h2{
+    font-size: 18px; 
+    font-weight: 400;   
+}
+.contactus-text > p {
+    font-size: 13px;
+    font-weight: 400;
+}
+.bottom-social-icons{
+    margin: 5px;
+}
 /* style form */
 .contactus-form{
-    height: 100vh;
+    height: 120vh;
     width: 80%;
-    margin: 20px auto
+    margin: 10px auto
 }
 form{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    gap: 0px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+form p{
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.input-container{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
 }
 .form-icon{
-    width: 24px;
-    height: 24px;
-    padding: auto;
-}
-.formicon-container{
-    background-color: #3F596C;;
-    border-right: 0.7px solid #8B8B8B;
     width: 50px;
     height: 55px;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #3F596C;
+    border: 0.7px solid #8B8B8B;
+    position: absolute;
+    top: 0px;    
+    left: 0px;       
+}
+form input{
+    height: 55px;
+    width: 100%;   
+}
+input[type="text"], 
+input[type="email"],
+input[type="number"],
+textarea{
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 70px;
+}
+input[type="date"]{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+form textarea{
+    width: 100%;
+    padding-top: 10px;
 }
 
-.input-container{
-    background-color: #D9D9D9;
-    border: 1px white solid;
-    height: 55px;
-    width: 378px;
-}
+
 
 /* style our partners section section */
 .ourpartners-container{
@@ -249,7 +295,31 @@ form{
         size: 30px;
     }
     /* style the contact us section */
-
+    form{
+        height: 100vh;
+        padding: 20px auto;
+        align-items: center;
+    }
+    .contactus-text h2{
+        text-align: center;
+        font-size: 30px;        
+    }
+    .contactus-text > p {
+        padding: 20px;
+    }
+   .contactus-means p:nth-child(2){
+        font-size: 25px;
+   }
+    .form-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 10px;
+    }
+    .userMessage{
+        grid-column: 1/span 2;
+        
+    }
     /* style our partners section section */
     .ourpartners-container{
         width: 90%;
@@ -332,7 +402,50 @@ form{
         size: 30px;
     }
     /* style the contact us section */
-
+    
+    .contactus-container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        align-items: start;
+        padding-bottom: 20px;
+        
+    }
+    .contactus-text{
+        width: 45%;
+        gap: 20px;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    .contactus-text h2{
+        text-align: left; 
+        font-size: 30px; 
+        font-weight: 700;
+        padding-left: 10px;      
+    }
+    .contactus-text > p {
+        padding: 10px 0;
+    }
+    .contactus-means{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .contactus-form{
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+    .form-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .userMessage{
+        grid-column: 1/span 2;
+        height: 214px;
+    }
     /* style our partners section section */
     .ourpartners-container{
         width: 90%;
